@@ -46,11 +46,11 @@ The repository is organized into two main folders:
 
 I have hosted the app on aws and diagram is illustrated below
 
-![AWS Architecture Diagram](https://github.com/HongVoDev/Java-Angular_the-word-project/blob/1c482acac518eb5925259791a0ca959ecf74fab0/thewordproject.PNG)
+![AWS Architecture Diagram](https://github.com/HongVoDev/Java-Angular_the-word-project/blob/925e0c65a5732c4085f3153d7c2b2d35876633d3/thewordproject.PNG)
 
 ## ☁️ Demo
 
-![Quick demo gif](https://github.com/HongVoDev/Java-Angular_the-word-project/blob/1c482acac518eb5925259791a0ca959ecf74fab0/word.gif)
+![Quick demo gif](https://github.com/HongVoDev/Java-Angular_the-word-project/blob/925e0c65a5732c4085f3153d7c2b2d35876633d3/word.gif)
 
 ## 🛠️ Local Setup
 

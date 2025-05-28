@@ -15,7 +15,7 @@ public class JournalService {
 	
 	@Autowired
 	public void BibleKeywordVerseService(BibleKeywordVerseRepository bibleKeywordVerseRepository) {
-	this.bibleKeywordVerseRepository = bibleKeywordVerseRepository;
+		this.bibleKeywordVerseRepository = bibleKeywordVerseRepository;
 	}
 
 	public List getVersesByKeyword(List<String> keywords) {

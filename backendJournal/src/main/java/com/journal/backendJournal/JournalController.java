@@ -19,28 +19,28 @@ import lombok.NoArgsConstructor;
 @RestController
 @NoArgsConstructor
 public class JournalController {
-	private JournalService journalService = new JournalService();
-	private EmotionAnalysisService emotionAnalysisService = new EmotionAnalysisService();
-	private static final ZoneId GMT_MINUS_5 = ZoneId.of("America/Chicago");
-	
-	@Autowired
-	public JournalController(JournalService journalService, EmotionAnalysisService emotionAnalysisService) {
-	this.journalService = journalService;
-	this.emotionAnalysisService = emotionAnalysisService;
-	}
+  private JournalService journalService = new JournalService();
+  private EmotionAnalysisService emotionAnalysisService = new EmotionAnalysisService();
+  private static final ZoneId GMT_MINUS_5 = ZoneId.of("America/Chicago");
 
-	@PostMapping("/getVersesByEntry")
-	public List analyzeEmotion(@RequestBody String text, HttpServletRequest request) {
-	try {
-		return journalService.getThreeVersesByKeyword(emotion);
-	} catch (Exception e) {
-		e.printStackTrace();
-		return null;
-	}
-	}
-	
-	@GetMapping("/healthcheck")
-	public ResponseEntity healthCheck() {
-	return ResponseEntity.ok("OK");
-	}
+  @Autowired
+  public JournalController(JournalService journalService, EmotionAnalysisService emotionAnalysisService) {
+    this.journalService = journalService;
+    this.emotionAnalysisService = emotionAnalysisService;
+  }
+
+  @PostMapping("/getVersesByEntry")
+  public List analyzeEmotion(@RequestBody String text, HttpServletRequest request) {
+    try {
+      return journalService.getThreeVersesByKeyword(emotion);
+    } catch (Exception e) {
+      e.printStackTrace();
+      return null;
+    }
+  }
+
+  @GetMapping("/healthcheck")
+  public ResponseEntity healthCheck() {
+    return ResponseEntity.ok("OK");
+  }
 }

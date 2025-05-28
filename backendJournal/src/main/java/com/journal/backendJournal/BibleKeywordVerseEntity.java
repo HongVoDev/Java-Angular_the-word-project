@@ -17,95 +17,93 @@ import jakarta.persistence.Table;
 @IdClass(BibleKeywordVerseEntity.BibleKeywordVerseId.class)
 public class BibleKeywordVerseEntity {
 
-	@Id
-	@Column(name = "keyword", length = 50)
-	private String keyword;
+  @Id
+  @Column(name = "keyword", length = 50)
+  private String keyword;
 
-	@Lob
-	@Column(name = "verse", columnDefinition = "TEXT")
-	private String verse;
+  @Lob
+  @Column(name = "verse", columnDefinition = "TEXT")
+  private String verse;
 
-	@Id
-	@Column(name = "place", length = 30)
-	private String place;
-	
-	@Column(name = "link", length = 200)
-	private String link;
+  @Id
+  @Column(name = "place", length = 30)
+  private String place;
 
-	public BibleKeywordVerseEntity() {
-	}
+  @Column(name = "link", length = 200)
+  private String link;
 
-	public String getKeyword() {
-	return keyword;
-	}
+  public BibleKeywordVerseEntity() {}
 
-	public void setKeyword(String keyword) {
-	this.keyword = keyword;
-	}
+  public String getKeyword() {
+    return keyword;
+  }
 
-	public String getVerse() {
-	return verse;
-	}
+  public void setKeyword(String keyword) {
+    this.keyword = keyword;
+  }
 
-	public void setVerse(String verse) {
-	this.verse = verse;
-	}
+  public String getVerse() {
+    return verse;
+  }
 
-	public String getPlace() {
-	return place;
-	}
+  public void setVerse(String verse) {
+    this.verse = verse;
+  }
 
-	public void setPlace(String place) {
-	this.place = place;
-	}
-	
-	public String getLink() {
-	return link;
-	}
+  public String getPlace() {
+    return place;
+  }
 
-	public void setLink(String link) {
-	this.link = link;
-	}
-	
-	public static class BibleKeywordVerseId implements Serializable {
-		private String keyword;
-		private String place;
+  public void setPlace(String place) {
+    this.place = place;
+  }
 
-		public BibleKeywordVerseId() {}
+  public String getLink() {
+    return link;
+  }
 
-		public BibleKeywordVerseId(String keyword, String place) {
-		this.keyword = keyword;
-		this.place = place;
-		}
+  public void setLink(String link) {
+    this.link = link;
+  }
 
-		public String getKeyword() {
-		return keyword;
-		}
+  public static class BibleKeywordVerseId implements Serializable {
+    private String keyword;
+    private String place;
 
-		public void setKeyword(String keyword) {
-		this.keyword = keyword;
-		}
+    public BibleKeywordVerseId() {}
 
-		public String getPlace() {
-		return place;
-		}
+    public BibleKeywordVerseId(String keyword, String place) {
+      this.keyword = keyword;
+      this.place = place;
+    }
 
-		public void setPlace(String place) {
-		this.place = place;
-		}
+    public String getKeyword() {
+      return keyword;
+    }
 
-		// Override equals() and hashCode() methods
-		@Override
-		public boolean equals(Object o) {
-		if (this == o) return true;
-		if (o == null || getClass() != o.getClass()) return false;
-		BibleKeywordVerseId that = (BibleKeywordVerseId) o;
-		return Objects.equals(keyword, that.keyword) && Objects.equals(place, that.place);
-		}
+    public void setKeyword(String keyword) {
+      this.keyword = keyword;
+    }
 
-		@Override
-		public int hashCode() {
-		return Objects.hash(keyword, place);
-		}
-	}
+    public String getPlace() {
+      return place;
+    }
+
+    public void setPlace(String place) {
+      this.place = place;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+      if (this == o) return true;
+      if (o == null || getClass() != o.getClass()) return false;
+      BibleKeywordVerseId that = (BibleKeywordVerseId) o;
+      return Objects.equals(keyword, that.keyword) && Objects.equals(place, that.place);
+    }
+
+    @Override
+    public int hashCode() {
+      return Objects.hash(keyword, place);
+    }
+  }
 }

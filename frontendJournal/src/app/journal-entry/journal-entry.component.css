@@ -6,22 +6,17 @@
 	display: flex;
 	flex-direction: row;
 	gap: 1%;
-	/* Add some spacing between the input and the verses */
 	flex-wrap: wrap;
-	/* Allow items to wrap to the next line */
 }
 
 .journal-input {
 	width: 40vw;
-	/* Take up half the container */
 	min-width: 300px;
-	/* Ensure a minimum width */
 }
 
 textarea {
 	width: 100%;
 	height: 200px;
-	/* Adjust as needed */
 	font-size: 16px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
@@ -45,9 +40,7 @@ button:disabled {
 
 .verses-display {
 	width: 50vw;
-	/* Take up half the container */
 	min-width: 300px;
-	/* Ensure a minimum width */
 	border: 1px solid #ddd;
 	border-radius: 5px;
 	background: #6ab1c9;
@@ -69,9 +62,7 @@ button:disabled {
 .loading-indicator-position {
 	text-align: center;
 	width: 50vw;
-	/* Take up half the container */
 	min-width: 300px;
-	/* Ensure a minimum width */
 	resize: vertical;
 	margin-left: auto;
 	margin-right: auto;
@@ -94,9 +85,7 @@ button:disabled {
 .no-results {
 	text-align: center;
 	width: 50vw;
-	/* Take up half the container */
 	min-width: 300px;
-	/* Ensure a minimum width */
 	border: 1px solid #ddd;
 	border-radius: 5px;
 	background: #6ab1c9;
@@ -127,17 +116,13 @@ body {
 body .btn-bg {
 	width: 100%;
 	height: auto;
-	/* Changed to auto to allow content to dictate height */
 	min-height: 8vh;
-	/* Add a minimum height */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
-	/* Add padding for spacing */
 	box-sizing: border-box;
-	/* Include padding in width/height calculation */
 }
 
 body .btn-bg.bg-1 {
@@ -154,21 +139,16 @@ body .btn-bg.bg-1 .btn-1 button {
 	-webkit-transform: translate(0, 0);
 	transform: translate(0, 0);
 	padding: 20px 40px;
-	/* Add padding to the button */
 	font-size: 1em;
-	/* Use em for relative font size */
 	line-height: 1.4;
-	/* Improve line spacing */
 }
 
 body .btn-bg.bg-1 .btn-1 button a {
 	color: #c7f8f9;
 	display: block;
-	/* Make the link a block element to fill the button */
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
-	/* Include padding in the link's width and height */
 }
 
 body .btn-bg.bg-1 .btn-1 button:hover {
@@ -328,9 +308,7 @@ mark {
 
 .l-design-widht {
 	width: 41vw;
-	/* Take up half the container */
 	min-width: 300px;
-	/* Ensure a minimum width */
 	padding: 1rem;
 	resize: vertical;
 	margin-right: auto;
@@ -408,11 +386,9 @@ button+button {
 	display: none;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 900px) {
 	.container {
 		flex-direction: column;
-		/* Stack the input and verses on top of each other */
 	}
 
 	.journal-input,
@@ -420,29 +396,23 @@ button+button {
 	.no-results,
 	.l-design-widht {
 		width: 90%;
-		/* Take up the full width */
 	}
 
 	body .btn-bg.bg-1 .btn-1 button {
 		font-size: 0.9em;
-		/* Reduce font size further on small screens */
 		padding: 6px 10px;
-		/* Reduce padding for smaller screens */
 	}
 
 	body .btn-bg {
 		min-height: auto;
-		/* Allow the height to adjust based on content */
 	}
 
 	.verses-display {
 		margin-top: auto;
-		/* Add some spacing between the input and verses */
 	}
 
 	.no-results {
 		margin-top: auto;
-		/* Add some spacing between the input and verses */
 	}
 
 	.no-results-text {
@@ -458,7 +428,6 @@ button+button {
 @media (max-width: 340px) {
 	.container {
 		flex-direction: column;
-		/* Stack the input and verses on top of each other */
 	}
 
 	.journal-input,
@@ -466,30 +435,23 @@ button+button {
 	.no-results,
 	.l-design-widht {
 		width: 70%;
-		/* Take up the full width */
 	}
 
 	body .btn-bg.bg-1 .btn-1 button {
 		font-size: 0.5em;
-		/* Reduce font size further on small screens */
 		padding: 2px 5px;
-
-		/* Reduce padding for smaller screens */
 	}
 
 	body .btn-bg {
 		min-height: auto;
-		/* Allow the height to adjust based on content */
 	}
 
 	.verses-display {
 		margin-top: auto;
-		/* Add some spacing between the input and verses */
 	}
 
 	.no-results {
 		margin-top: auto;
-		/* Add some spacing between the input and verses */
 	}
 
 	.no-results-text {
@@ -557,17 +519,20 @@ button+button {
 	text-align: left;
 	width: 100%;
 }
+
 details {
 	margin-bottom: 10px;
 }
-details > summary {
+
+details>summary {
 	font-family: 'Raleway';
 	color: #4189A8;
 	padding: 5px 10px;
 	font-size: 1.1em;
 	cursor: pointer;
 }
-details > p {
+
+details>p {
 	font-family: 'glacial';
 	color: #291b25;
 	font-size: 1.05rem;
@@ -584,9 +549,9 @@ details > p {
 	margin: 0.5%;
 	padding-left: 1%;
 }
-	
+
 .details-2 {
-	position: relative; /* Changed from fixed */
+	position: relative;
 	width: 100vw;
 	background-color: #6ab1c9;
 	color: white;
@@ -594,9 +559,9 @@ details > p {
 	font-size: large;
 	text-align: center;
 	cursor: pointer;
-	}
+}
 
-	.note {
+.note {
 	width: 90%;
 	font-family: playwrite;
 	text-align: center;
@@ -605,58 +570,49 @@ details > p {
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #6ab1c9;
-	/*position: fixed; remove the fixed postion, this caused it to overlap*/
-	/*bottom: 0; remove the fixed postion, this caused it to overlap*/
-	/*right: 0; remove the fixed postion, this caused it to overlap*/
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.7s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
 	}
-	
-	.fade-in {
+
+	100% {
 		opacity: 1;
-		animation-name: fadeInOpacity;
-		animation-iteration-count: 1;
-		animation-timing-function: ease-in;
-		animation-duration: 0.7s;
 	}
-	
-	@keyframes fadeInOpacity {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
+}
 
-	.accordion-2 {
+.accordion-2 {
 	background-color: #6ab1c9;
-	/*position: fixed; remove fixed postion, to allow div to be placed under*/
-	/*bottom: 0; remove fixed postion, to allow div to be placed under*/
-	/*left: 0; remove fixed postion, to allow div to be placed under*/
 	width: 100vw;
-	/*height: 15vh; Initial height (closed state) */
 	transition: height 0.3s ease-out;
-	overflow-y: auto; /* changed to auto to show content when it overflows*/
+	overflow-y: auto;
 	overflow-x: hidden;
-	/*bottom: 0; redundant since already defined */
 	transition: height 1s;
-	height: auto; /* set to auto so content doesn't get cutoff*/
-	
-	}
-	
-	details[open] .accordion-2{
-	/*height: 30vh; adjust height when opened based on needs */
+	height: auto;
+
+}
+
+details[open] .accordion-2 {
 	transition: height 1s;
-	height: auto; /* set to auto so content doesn't get cutoff*/
+	height: auto;
+}
+
+@media (max-width: 900px) {
+	.note {
+		font-size: 0.5rem;
 	}
+}
 
-	@media (max-width: 900px) {
-		.note {
-			font-size: 0.5rem;
-		}
-	}
-
-	.inner-text {
-		font-family: 'glacial';
-		font-style: italic;
-		}
-
+.inner-text {
+	font-family: 'glacial';
+	font-style: italic;
+}

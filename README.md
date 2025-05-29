@@ -50,7 +50,7 @@ I have hosted the app on aws and diagram is illustrated below
 
 ## ☁️ Demo
 
-![Quick demo gif](https://github.com/HongVoDev/Java-Angular_the-word-project/blob/925e0c65a5732c4085f3153d7c2b2d35876633d3/word.gif)
+![Quick demo gif](https://github.com/HongVoDev/Java-Angular_the-word-project/blob/401e670d22eae16682196232803087a30fdf7454/demo.gif)
 
 ## 🛠️ Local Setup
 
